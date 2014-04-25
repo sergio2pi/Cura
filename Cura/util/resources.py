@@ -51,7 +51,7 @@ def getDefaultMachineProfiles():
 
 def setupLocalization(selectedLanguage = None):
 	#Default to english
-	languages = ['en']
+	languages = ['esp']
 
 	if selectedLanguage is not None:
 		for item in getLanguageOptions():
@@ -66,10 +66,10 @@ def setupLocalization(selectedLanguage = None):
 
 def getLanguageOptions():
 	return [
-		 ['en', 'English'],
+		# ['en', 'English'],
 		# ['de', 'Deutsch'],
 		# ['fr', 'French'],
 		# ['nl', 'Nederlands'],
-		# ['esp', 'Spanish'],
+		 ['esp', 'Spanish'],
 		# ['po', 'Polish']
 	]

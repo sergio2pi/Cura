@@ -134,7 +134,7 @@ class CuraApp(wx.App):
 			self.loadFiles = [exampleFile]
 			if self.splash is not None:
 				self.splash.Show(False)
-			configWizard.configWizard()
+			configWizard.setDefaultMachineSetting()#configWizard.configWizard()
 
 		if profile.getPreference('check_for_updates') == 'True':
 			newVersion = version.checkForNewerVersion()

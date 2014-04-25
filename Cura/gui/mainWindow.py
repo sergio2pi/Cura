@@ -27,7 +27,8 @@ from Cura.util import meshLoader
 
 class mainWindow(wx.Frame):
 	def __init__(self):
-		super(mainWindow, self).__init__(None, title='Cura - ' + version.getVersion())
+		#super(mainWindow, self).__init__(None, title='Cura - ' + version.getVersion())
+		super(mainWindow, self).__init__(None, title='Cura - Trimaker Element')
 
 		wx.EVT_CLOSE(self, self.OnClose)
 
@@ -98,8 +99,8 @@ class mainWindow(wx.Frame):
 		self.fileMenu.AppendSeparator()
 		i = self.fileMenu.Append(-1, _("Preferences...\tCTRL+,"))
 		self.Bind(wx.EVT_MENU, self.OnPreferences, i)
-		i = self.fileMenu.Append(-1, _("Machine settings..."))
-		self.Bind(wx.EVT_MENU, self.OnMachineSettings, i)
+####		i = self.fileMenu.Append(-1, _("Machine settings..."))
+####		self.Bind(wx.EVT_MENU, self.OnMachineSettings, i)
 		self.fileMenu.AppendSeparator()
 
 		# Model MRU list
@@ -169,8 +170,8 @@ class mainWindow(wx.Frame):
 		self.normalModeOnlyItems.append(i)
 		self.Bind(wx.EVT_MENU, self.OnExpertOpen, i)
 		expertMenu.AppendSeparator()
-		i = expertMenu.Append(-1, _("Run first run wizard..."))
-		self.Bind(wx.EVT_MENU, self.OnFirstRunWizard, i)
+####		i = expertMenu.Append(-1, _("Run first run wizard..."))
+####		self.Bind(wx.EVT_MENU, self.OnFirstRunWizard, i)
 		self.bedLevelWizardMenuItem = expertMenu.Append(-1, _("Run bed leveling wizard..."))
 		self.Bind(wx.EVT_MENU, self.OnBedLevelWizard, self.bedLevelWizardMenuItem)
 		self.headOffsetWizardMenuItem = expertMenu.Append(-1, _("Run head offset wizard..."))
@@ -180,13 +181,13 @@ class mainWindow(wx.Frame):
 
 		helpMenu = wx.Menu()
 		i = helpMenu.Append(-1, _("Online documentation..."))
-		self.Bind(wx.EVT_MENU, lambda e: webbrowser.open('http://daid.github.com/Cura'), i)
+		self.Bind(wx.EVT_MENU, lambda e: webbrowser.open('http://wiki.trimaker.com'), i)
 		i = helpMenu.Append(-1, _("Report a problem..."))
-		self.Bind(wx.EVT_MENU, lambda e: webbrowser.open('https://github.com/daid/Cura/issues'), i)
-		i = helpMenu.Append(-1, _("Check for update..."))
-		self.Bind(wx.EVT_MENU, self.OnCheckForUpdate, i)
-		i = helpMenu.Append(-1, _("Open YouMagine website..."))
-		self.Bind(wx.EVT_MENU, lambda e: webbrowser.open('https://www.youmagine.com/'), i)
+		self.Bind(wx.EVT_MENU, lambda e: webbrowser.open('mailto:soporte@trimaker.com?Subject=Software'), i)
+####		i = helpMenu.Append(-1, _("Check for update..."))
+####		self.Bind(wx.EVT_MENU, self.OnCheckForUpdate, i)
+####		i = helpMenu.Append(-1, _("Open YouMagine website..."))
+####		self.Bind(wx.EVT_MENU, lambda e: webbrowser.open('https://www.youmagine.com/'), i)
 		i = helpMenu.Append(-1, _("About Cura..."))
 		self.Bind(wx.EVT_MENU, self.OnAbout, i)
 		self.menubar.Append(helpMenu, _("Help"))
