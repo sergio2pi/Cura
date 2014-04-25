@@ -16,7 +16,8 @@ class configPanelBase(wx.Panel):
 		
 		#Create the popup window
 		self.popup = wx.PopupWindow(self, flags=wx.BORDER_SIMPLE)
-		self.popup.SetBackgroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_INFOBK))
+		#self.popup.SetBackgroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_INFOBK))
+		self.popup.SetBackgroundColour((255, 242, 228, 255))
 		self.popup.setting = None
 		self.popup.text = wx.StaticText(self.popup, -1, '')
 		self.popup.text.SetForegroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_INFOTEXT))

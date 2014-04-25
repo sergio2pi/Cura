@@ -147,13 +147,13 @@ class mainWindow(wx.Frame):
 		else:
 			self.allAtOnceItem.Check(True)
 
-		self.menubar.Append(toolsMenu, _("Tools"))
+		#self.menubar.Append(toolsMenu, _("Tools"))
 
 		#Machine menu for machine configuration/tooling
-		self.machineMenu = wx.Menu()
-		self.updateMachineMenu()
-
-		self.menubar.Append(self.machineMenu, _("Machine"))
+# 		self.machineMenu = wx.Menu()
+# 		self.updateMachineMenu()
+# 
+# 		self.menubar.Append(self.machineMenu, _("Machine"))
 
 		expertMenu = wx.Menu()
 		i = expertMenu.Append(-1, _("Switch to quickprint..."), kind=wx.ITEM_RADIO)
@@ -328,10 +328,10 @@ class mainWindow(wx.Frame):
 			self.splitter.SetSashPosition(self.normalSashPos, True)
 			# Enabled sash
 			self.splitter.SetSashSize(4)
-		self.defaultFirmwareInstallMenuItem.Enable(firmwareInstall.getDefaultFirmware() is not None)
-		if profile.getMachineSetting('machine_type') == 'ultimaker2':
-			self.bedLevelWizardMenuItem.Enable(False)
-			self.headOffsetWizardMenuItem.Enable(False)
+# 		self.defaultFirmwareInstallMenuItem.Enable(firmwareInstall.getDefaultFirmware() is not None)
+# 		if profile.getMachineSetting('machine_type') == 'ultimaker2':
+# 			self.bedLevelWizardMenuItem.Enable(False)
+# 			self.headOffsetWizardMenuItem.Enable(False)
 		if int(profile.getMachineSetting('extruder_amount')) < 2:
 			self.headOffsetWizardMenuItem.Enable(False)
 		self.scene.updateProfileToControls()

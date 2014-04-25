@@ -102,9 +102,10 @@ class SceneView(openglGui.glGuiPanel):
 		self.scaleUniform = openglGui.glCheckbox(self.scaleForm, True, (1,8), None)
 
 		self.viewSelection = openglGui.glComboButton(self, _("View mode"), [7,19,11,15,23], [_("Normal"), _("Overhang"), _("Transparent"), _("X-Ray"), _("Layers")], (-1,0), self.OnViewChange)
-
-		self.youMagineButton = openglGui.glButton(self, 26, _("Share on YouMagine"), (2,0), lambda button: youmagineGui.youmagineManager(self.GetTopLevelParent(), self._scene))
-		self.youMagineButton.setDisabled(True)
+		
+		##### disable youMagineButton 2
+		#self.youMagineButton = openglGui.glButton(self, 26, _("Share on YouMagine"), (2,0), lambda button: youmagineGui.youmagineManager(self.GetTopLevelParent(), self._scene))
+		#self.youMagineButton.setDisabled(True)
 
 		self.notification = openglGui.glNotification(self, (0, 0))
 
@@ -131,11 +132,15 @@ class SceneView(openglGui.glGuiPanel):
 		self.printButton.setBottomText('')
 		self.viewSelection.setValue(4)
 		self.printButton.setDisabled(False)
-		self.youMagineButton.setDisabled(True)
+		
+		##### disable youMagineButton 1
+		#self.youMagineButton.setDisabled(True)
+		
 		self.OnViewChange()
 
 	def loadSceneFiles(self, filenames):
-		self.youMagineButton.setDisabled(False)
+		##### disable youMagineButton 1
+		#self.youMagineButton.setDisabled(False)
 		#if self.viewSelection.getValue() == 4:
 		#	self.viewSelection.setValue(0)
 		#	self.OnViewChange()
@@ -1312,9 +1317,11 @@ class SceneView(openglGui.glGuiPanel):
 		for n in xrange(0, len(polys[0])):
 			if not circular:
 				if n % 2 == 0:
-					glColor4ub(5, 171, 231, 96)
+					#glColor4ub(5, 171, 231, 96)
+					glColor4ub(241, 137, 33, 96)
 				else:
-					glColor4ub(5, 171, 231, 64)
+					#glColor4ub(5, 171, 231, 64)
+					glColor4ub(241, 137, 33, 64)
 			else:
 				glColor4ub(5, 171, 231, 96)
 
@@ -1325,7 +1332,8 @@ class SceneView(openglGui.glGuiPanel):
 		glEnd()
 
 		#Draw top of build volume.
-		glColor4ub(5, 171, 231, 128)
+		#glColor4ub(5, 171, 231, 128)
+		glColor4ub(241, 137, 33, 128)
 		glBegin(GL_TRIANGLE_FAN)
 		for p in polys[0][::-1]:
 			glVertex3f(p[0], p[1], height)
