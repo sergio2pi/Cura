@@ -9,6 +9,7 @@ import threading
 import math
 import sys
 import cStringIO as StringIO
+from Cura.gui.util import openglHelpers
 
 import OpenGL
 OpenGL.ERROR_CHECKING = False

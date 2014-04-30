@@ -158,6 +158,7 @@ class glGuiPanel(glcanvas.GLCanvas):
 		wx.EVT_CHAR(self, self._OnGuiKeyChar)
 		wx.EVT_KILL_FOCUS(self, self.OnFocusLost)
 		wx.EVT_IDLE(self, self._OnIdle)
+		
 
 	def _OnIdle(self, e):
 		self._idleCalled = True
@@ -235,6 +236,7 @@ class glGuiPanel(glcanvas.GLCanvas):
 				glTranslate(10, self.GetSize().GetHeight() - 30, -1)
 				glColor4f(0.2,0.2,0.2,0.5)
 				openglHelpers.glDrawStringLeft("fps:%d" % (1 / renderTime))
+				
 			self.SwapBuffers()
 		except:
 			# When an exception happens, catch it and show a message box. If the exception is not caught the draw function bugs out.
@@ -290,7 +292,7 @@ class glGuiPanel(glcanvas.GLCanvas):
 		# glEnd()
 		# glDisable(GL_TEXTURE_2D)
 		# glPopMatrix()
-
+		
 	def _OnEraseBackground(self,event):
 		#Workaround for windows background redraw flicker.
 		pass

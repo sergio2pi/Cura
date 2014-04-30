@@ -4,6 +4,7 @@ import math
 import numpy
 import wx
 import time
+import Image
 
 from Cura.util.resources import getPathForImage
 
@@ -401,6 +402,28 @@ def glDrawStretchedQuad(x, y, w, h, cornerSize, texID):
 	glEnd()
 	glDisable(GL_TEXTURE_2D)
 	glPopMatrix()
+	
+def glDrawImage():
+# 	image = Image.open("/home/trimaker/Pictures/trim.jpg")
+# 	
+# 	ix = image.size[0]
+# 	iy = image.size[1]
+# 	image = image.tostring("raw", "RGBX", 0, -1)
+# 	
+# 	glPixelStorei(GL_UNPACK_ALIGNMENT,1)
+# 	glTexImage2D(GL_TEXTURE_2D, 3, 3, ix, iy, 0, GL_RGBA, GL_UNSIGNED_BYTE, image)
+# 	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP)
+# 	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP)
+# 	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT)
+# 	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT)
+# 	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST)
+# 	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST)
+#  	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL)
+ 	width, height = 640, 480
+ 	data = glReadPixels(0, 0, width, height, GL_RGBA, GL_UNSIGNED_BYTE)
+	image = Image.fromstring("RGBA", (width, height), data)
+	image.show()
+	image.save('/home/trimaker/Pictures/trim.jpg', 'PNG')
 
 def unproject(winx, winy, winz, modelMatrix, projMatrix, viewport):
 	"""

@@ -214,6 +214,11 @@ class mainWindow(wx.Frame):
 		sizer = wx.BoxSizer()
 		self.rightPane.SetSizer(sizer)
 		sizer.Add(self.scene, 1, flag=wx.EXPAND)
+		
+		
+# 		img = wx.Image("/home/trimaker/Trimaker/Element/Cura/resources/images/UltimakerRobot.png")
+# 		self.image = wx.StaticBitmap(self.rightPane, wx.ID_ANY, wx.BitmapFromImage(img))
+# 		sizer.Add(self.image)
 
 		# Main window sizer
 		sizer = wx.BoxSizer(wx.VERTICAL)

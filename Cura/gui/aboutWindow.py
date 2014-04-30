@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 __copyright__ = "Copyright (C) 2013 David Braam - Released under terms of the AGPLv3 License"
 
 import wx
@@ -5,7 +6,7 @@ import platform
 
 class aboutWindow(wx.Frame):
 	def __init__(self):
-		super(aboutWindow, self).__init__(None, title="About", style = wx.DEFAULT_DIALOG_STYLE)
+		super(aboutWindow, self).__init__(None, title="Sobre Cura Element", style = wx.DEFAULT_DIALOG_STYLE)
 
 		wx.EVT_CLOSE(self, self.OnClose)
 
@@ -16,7 +17,16 @@ class aboutWindow(wx.Frame):
 		s.Add(p, flag=wx.ALL, border=15)
 		s = wx.BoxSizer(wx.VERTICAL)
 		p.SetSizer(s)
+		
+		title = wx.StaticText(p, -1, 'Cura Element')
+		title.SetFont(wx.Font(18, wx.SWISS, wx.NORMAL, wx.BOLD))
+		s.Add(title, flag=wx.ALIGN_CENTRE|wx.EXPAND|wx.BOTTOM, border=5)
 
+		s.Add(wx.StaticText(p, -1, 'Cura Element es una adaptación de Cura preparado para operar la impresora Trimaker Element'))
+		s.Add(wx.StaticText(p, -1, 'www.trimaker.com'))		
+		
+		s.Add(wx.StaticText(p, -1, '-----------'))
+		
 		title = wx.StaticText(p, -1, 'Cura')
 		title.SetFont(wx.Font(18, wx.SWISS, wx.NORMAL, wx.BOLD))
 		s.Add(title, flag=wx.ALIGN_CENTRE|wx.EXPAND|wx.BOTTOM, border=5)
