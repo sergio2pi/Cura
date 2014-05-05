@@ -4,7 +4,7 @@ import math
 import numpy
 import wx
 import time
-import Image
+#import Image
 
 from Cura.util.resources import getPathForImage
 
@@ -404,6 +404,7 @@ def glDrawStretchedQuad(x, y, w, h, cornerSize, texID):
 	glPopMatrix()
 	
 def glDrawImage():
+	#TODO: Insertar logo trimaker en la pantalla
 # 	image = Image.open("/home/trimaker/Pictures/trim.jpg")
 # 	
 # 	ix = image.size[0]
@@ -419,11 +420,12 @@ def glDrawImage():
 # 	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST)
 # 	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST)
 #  	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL)
- 	width, height = 640, 480
- 	data = glReadPixels(0, 0, width, height, GL_RGBA, GL_UNSIGNED_BYTE)
-	image = Image.fromstring("RGBA", (width, height), data)
-	image.show()
-	image.save('/home/trimaker/Pictures/trim.jpg', 'PNG')
+#  	width, height = 640, 480
+#  	data = glReadPixels(0, 0, width, height, GL_RGBA, GL_UNSIGNED_BYTE)
+# 	image = Image.fromstring("RGBA", (width, height), data)
+# 	image.show()
+# 	image.save('/home/trimaker/Pictures/trim.jpg', 'PNG')
+	pass
 
 def unproject(winx, winy, winz, modelMatrix, projMatrix, viewport):
 	"""
