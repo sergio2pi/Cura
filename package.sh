@@ -17,8 +17,9 @@ BUILD_TARGET=${1:-none}
 ##Do we need to create the final archive
 ARCHIVE_FOR_DISTRIBUTION=1
 ##Which version name are we appending to the final archive
-export BUILD_NAME=14.03-TEST2
-TARGET_DIR=Cura-${BUILD_NAME}-${BUILD_TARGET}
+#export BUILD_NAME=14.03-TEST2
+export BUILD_NAME=0.1
+TARGET_DIR=Cura-Element_${BUILD_NAME}-${BUILD_TARGET}
 
 ##Which versions of external programs to use
 WIN_PORTABLE_PY_VERSION=2.7.2.1
