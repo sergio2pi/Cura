@@ -1312,19 +1312,19 @@ class headOffsetWizard(wx.wizard.Wizard):
 
 
 def setDefaultMachineSetting():
-	profile.putMachineSetting('machine_width', '80')
-	profile.putMachineSetting('machine_depth', '80')
-	profile.putMachineSetting('machine_height', '60')
-	profile.putMachineSetting('machine_name', 'Element')
+	profile.putMachineSetting('machine_width', '200')
+	profile.putMachineSetting('machine_depth', '200')
+	profile.putMachineSetting('machine_height', '175')
+	profile.putMachineSetting('machine_name', 'Trimaker Element')
 	profile.putMachineSetting('machine_type', 'reprap')
 	profile.putMachineSetting('gcode_flavor', 'RepRap (Marlin/Sprinter)')
 	profile.putPreference('startMode', 'Normal')
-	profile.putProfileSetting('nozzle_size', '0.5')
+	profile.putProfileSetting('nozzle_size', '0.4')
 	#profile.putProfileSetting('wall_thickness', float(profile.getProfileSetting('nozzle_size')) * 2)
 	profile.putProfileSetting('wall_thickness', '1')
 	profile.putMachineSetting('extruder_amount', '1')
 	
-	profile.putMachineSetting('has_heated_bed', False)
+	profile.putMachineSetting('has_heated_bed', True)
 	profile.putMachineSetting('machine_center_is_zero', False)
 	profile.putMachineSetting('extruder_head_size_min_x', '0')
 	profile.putMachineSetting('extruder_head_size_min_y', '0')
