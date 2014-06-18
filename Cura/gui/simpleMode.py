@@ -88,31 +88,35 @@ class simpleModePanel(wx.Panel):
 		if self.printTypeNormal.GetValue():
 			put('layer_height', '0.2')
 			put('wall_thickness', nozzle_size * 2.0)
-			put('layer_height', '0.10')
+			put('layer_height', '0.20')
 			put('fill_density', '20')
 		elif self.printTypeLow.GetValue():
 			put('wall_thickness', nozzle_size * 2.5)
-			put('layer_height', '0.20')
-			put('fill_density', '10')
+			put('layer_height', '0.30')
+			put('fill_density', '20')
 			put('print_speed', '60')
-			put('cool_min_layer_time', '3')
+			put('cool_min_layer_time', '12')
 			put('bottom_layer_speed', '30')
 		elif self.printTypeHigh.GetValue():
 			put('wall_thickness', nozzle_size * 2.0)
-			put('layer_height', '0.06')
-			put('fill_density', '20')
-			put('bottom_layer_speed', '15')
+			put('layer_height', '0.1')
+			put('fill_density', '25')
+			put('print_speed', '30')
+			put('bottom_layer_speed', '20')
 		elif self.printTypeJoris.GetValue():
-			put('wall_thickness', nozzle_size * 1.5)
+			put('wall_thickness', nozzle_size * 2)
 
 		put('filament_diameter', self.printMaterialDiameter.GetValue())
 		if self.printMaterialPLA.GetValue():
-			pass
-		if self.printMaterialABS.GetValue():
-			put('print_bed_temperature', '100')
+			put('print_bed_temperature', '40')
 			put('platform_adhesion', 'Brim')
-			put('filament_flow', '107')
-			put('print_temperature', '245')
+			put('filament_flow', '100')
+			put('print_temperature', '190')
+			put('fan_enabled','True')
+
+		if self.printMaterialABS.GetValue():
+			pass
+		
 		put('plugin_config', '')
 
 	def updateProfileToControls(self):
