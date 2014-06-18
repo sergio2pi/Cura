@@ -91,19 +91,19 @@ msgstr "Nombre de la máquina"
 
 #: Cura/gui/configWizard.py:288
 msgid "Machine width (mm)"
-msgstr "Anchura máquina (mm)"
+msgstr "Ancho de la máquina (mm)"
 
 #: Cura/gui/configWizard.py:289
 msgid "Machine depth (mm)"
-msgstr "Produndidad máquina (mm)"
+msgstr "Profundidad de la máquina (mm)"
 
 #: Cura/gui/configWizard.py:290
 msgid "Machine height (mm)"
-msgstr "Altura máquina (mm)"
+msgstr "Altura de la máquina (mm)"
 
 #: Cura/gui/configWizard.py:291 Cura/util/profile.py:175
 msgid "Nozzle size (mm)"
-msgstr "Tamaño Nozzle (mm)"
+msgstr "Tamaño del Nozzle (mm)"
 
 #: Cura/gui/configWizard.py:292 Cura/util/profile.py:383
 msgid "Heated bed"
@@ -192,7 +192,7 @@ msgstr ""
 
 #: Cura/gui/configWizard.py:423
 msgid "Upgrade Ultimaker Firmware"
-msgstr "Actuliza Firmware Ultimaker"
+msgstr "Actualiza Firmware Ultimaker"
 
 #: Cura/gui/configWizard.py:424
 msgid ""
@@ -499,7 +499,7 @@ msgstr "Cargar Perfil desde GCode"
 
 #: Cura/gui/mainWindow.py:94
 msgid "Reset Profile to default"
-msgstr "Reseter Pefil a por defecto"
+msgstr "Volver a perfil por defecto"
 
 #: Cura/gui/mainWindow.py:99
 msgid "Preferences...\tCTRL+,"
@@ -507,15 +507,15 @@ msgstr "Preferencias...\tCTRL+,"
 
 #: Cura/gui/mainWindow.py:101 Cura/gui/mainWindow.py:434
 msgid "Machine settings..."
-msgstr "Ajuste de la máquina..."
+msgstr "Configuración de la máquina..."
 
 #: Cura/gui/mainWindow.py:107
 msgid "Recent Model Files"
-msgstr "Modelos Recientes"
+msgstr "Modelos recientes"
 
 #: Cura/gui/mainWindow.py:114
 msgid "Recent Profile Files"
-msgstr "Perfiles Recientes"
+msgstr "Perfiles recientes"
 
 #: Cura/gui/mainWindow.py:120
 msgid "Quit"
@@ -539,7 +539,7 @@ msgstr "Copiar perfil al portapapeles"
 
 #: Cura/gui/mainWindow.py:141
 msgid "Print all at once"
-msgstr ""
+msgstr "Imprimir todo junto"
 
 #: Cura/gui/mainWindow.py:143
 #, fuzzy
@@ -552,11 +552,11 @@ msgstr "Herramientas"
 
 #: Cura/gui/mainWindow.py:156 Cura/util/profile.py:175
 msgid "Machine"
-msgstr "Maquina"
+msgstr "Máquina"
 
 #: Cura/gui/mainWindow.py:159
 msgid "Switch to quickprint..."
-msgstr "Cambiar a ajustes rapidos..."
+msgstr "Cambiar a ajustes rápidos..."
 
 #: Cura/gui/mainWindow.py:163
 msgid "Switch to full settings..."
@@ -573,7 +573,7 @@ msgstr "Iniciar asistente inicial..."
 
 #: Cura/gui/mainWindow.py:174
 msgid "Run bed leveling wizard..."
-msgstr "Iniciar sistente para calibración de la cama..."
+msgstr "Iniciar asistente para calibración de la cama..."
 
 #: Cura/gui/mainWindow.py:176
 msgid "Run head offset wizard..."
@@ -722,11 +722,11 @@ msgstr "Colores"
 
 #: Cura/gui/preferencesDialog.py:37 Cura/util/profile.py:358
 msgid "Language"
-msgstr ""
+msgstr "Idioma"
 
 #: Cura/gui/preferencesDialog.py:40
 msgid "Filament settings"
-msgstr "Ajustes filamento"
+msgstr "Ajustes de filamento"
 
 #: Cura/gui/preferencesDialog.py:50
 msgid "Cura settings"
@@ -924,11 +924,11 @@ msgstr "Engine log..."
 
 #: Cura/gui/sceneView.py:490
 msgid "How many copies do you want?"
-msgstr ""
+msgstr "¿Cuántas copias quiere?"
 
 #: Cura/gui/sceneView.py:490
 msgid "Number of copies"
-msgstr ""
+msgstr "Número de copias"
 
 #: Cura/gui/sceneView.py:490
 #, fuzzy
@@ -970,8 +970,7 @@ msgstr "Trazadpo a SD"
 
 #: Cura/gui/sceneView.py:1205
 msgid "Overhang view not working due to lack of OpenGL shaders support."
-msgstr ""
-"Vista Voladizo no funciona debido a la falta de soporte de shaders OpenGL."
+msgstr "Vista Voladizo no funciona debido a la falta de soporte de shaders OpenGL."
 
 #: Cura/gui/simpleMode.py:19
 msgid "High quality print"
@@ -979,11 +978,11 @@ msgstr "Impresión Alta calidad"
 
 #: Cura/gui/simpleMode.py:20
 msgid "Normal quality print"
-msgstr "Calidad de impresión Normal"
+msgstr "Impresión Calidad Normal"
 
 #: Cura/gui/simpleMode.py:21
 msgid "Fast low quality print"
-msgstr "Rapido impresión baja calidad"
+msgstr "Impresión Baja calidad"
 
 #: Cura/gui/simpleMode.py:22
 msgid "Thin walled cup or vase"
@@ -1027,20 +1026,20 @@ msgstr "Grosor base (mm)"
 #: Cura/gui/tools/imageToMesh.py:36
 #, fuzzy
 msgid "Width (mm)"
-msgstr "Anchura máquina (mm)"
+msgstr "Ancho de la máquina (mm)"
 
 #: Cura/gui/tools/imageToMesh.py:40
 #, fuzzy
 msgid "Depth (mm)"
-msgstr "Diamtreo (mm)"
+msgstr "Diametro (mm)"
 
 #: Cura/gui/tools/projector.py:42
 msgid "Edit"
-msgstr ""
+msgstr "Editar"
 
 #: Cura/gui/tools/projector.py:43
 msgid "Rectangle"
-msgstr ""
+msgstr "Rectangulo"
 
 #: Cura/gui/tools/projector.py:44
 #, fuzzy
@@ -1049,7 +1048,7 @@ msgstr "Archivo"
 
 #: Cura/gui/tools/projector.py:45
 msgid "Draw curves"
-msgstr ""
+msgstr "Dibujar curvas"
 
 #: Cura/gui/tools/youmagineGui.py:78
 msgid "Checking token"
@@ -1250,12 +1249,12 @@ msgid ""
 msgstr ""
 "Espeso de capa en milimetros. \n"
 "Este es el ajuste más importante para definir la calidad de impresión. "
-"Impresiones normales usan 0.1 mm, Alta calidad 0,06 mm. Puedes incluso "
-"utilizar 0.25mm para impresiones muy rapidas a baja calidad en la Ultimaker."
+"Impresiones normales usan 0.2 mm, Alta calidad 0,1 mm. Puedes incluso "
+"utilizar 0.3mm para impresiones muy rapidas a baja calidad en la Trimaker Element."
 
 #: Cura/util/profile.py:171
 msgid "Shell thickness (mm)"
-msgstr "Espesor cáscara (mm)"
+msgstr "Espesor de pared (mm)"
 
 #: Cura/util/profile.py:171
 msgid ""
@@ -1277,7 +1276,7 @@ msgid ""
 "Retract the filament when the nozzle is moving over a none-printed area. "
 "Details about the retraction can be configured in the advanced tab."
 msgstr ""
-"Retraer el filamento cuando el nozzle se mueva sobre un area sin impresión. "
+"Retraer el filamento cuando el nozzle se mueva sobre un área sin impresión. "
 "Detalles de la retracción pueden ser configurados en la pestaña ajustes "
 "avanzados."
 
@@ -1298,8 +1297,7 @@ msgid ""
 msgstr ""
 "Controla el espesor de la capa inferior y  superior, la cantidad de capas "
 "sólidas se calcula por el espesor de la capa y este valor.\n"
-"Tener un valor múltiplo del espesor de la capa tiene sentido. Y mantenerlo "
-"cerca de su espesor de pared para hacer una pieza uniformemente fuerte."
+"Tener un valor múltiplo del espesor de la capa es recomendable."
 
 #: Cura/util/profile.py:174
 msgid "Fill Density (%)"
@@ -1346,7 +1344,7 @@ msgid ""
 "depends on a lot of factors. So you will be experimenting with optimal "
 "settings for this."
 msgstr ""
-"Velocid a la que imprime Una Ultimaker bien ajustada puede alcanzar 150mm/s "
+"Velocidad a la que imprime Una Trimaker Element bien ajustada puede alcanzar 140mm/s "
 "pero para impresiones de calidad es mejor velocidades menores. La velocidad "
 "de impresión depende de muchos factores. Experimenta hasta encontrar tus "
 "ajustes óptimos."
@@ -1359,7 +1357,7 @@ msgstr "Temperatura impresión (C)"
 #: Cura/util/profile.py:180
 msgid ""
 "Temperature used for printing. Set at 0 to pre-heat yourself.\n"
-"For PLA a value of 210C is usually used.\n"
+"For PLA a value of 190C is usually used.\n"
 "For ABS a value of 230C or higher is required."
 msgstr ""
 "Temperaturas usadas para imprimir. Deja a 0 para definirlas.\n"
@@ -1453,10 +1451,10 @@ msgid ""
 "and your object.\n"
 "(Note that enabling the brim or raft disables the skirt)"
 msgstr ""
-"Diferentes opciones que ayudan en la prevención de las esquinas de elevación "
-"debido a la deformación. \n"
-"Brim-Falda añade una capa de grosor plana alrededor de su objeto, que es "
-"fácil de cortar después, y la opción recomendada. \n"
+"Diferentes opciones que ayudan a la adhesión y a combatir la contracción\n"
+"Brim-Falda, añade una capa plana alrededor de su objeto, que es "
+"fácil de cortar después. Es la opción recomendada. \n"
+
 "Raft-Balsa agrega una trama gruesa por debajo del objeto y una interfaz fina "
 "entre esto y su objeto. \n"
 "(Tenga en cuenta que la activación de Raft o Brim desactiva el borde-skirt)"
@@ -1501,7 +1499,7 @@ msgstr "Fusionar extrusión dual"
 
 #: Cura/util/profile.py:185
 msgid "Wipe&prime tower"
-msgstr ""
+msgstr "Torre de limpieza y purgado."
 
 #: Cura/util/profile.py:185
 msgid ""
@@ -1542,7 +1540,7 @@ msgstr "Filamento"
 
 #: Cura/util/profile.py:188
 msgid "Diameter (mm)"
-msgstr "Diamtreo (mm)"
+msgstr "Diámetre (mm)"
 
 #: Cura/util/profile.py:188
 msgid ""
@@ -1629,8 +1627,7 @@ msgid ""
 "Amount of retraction, set at 0 for no retraction at all. A value of 4.5mm "
 "seems to generate good results."
 msgstr ""
-"Cantidad de retracción, fijar a 0 para no retraer. Un valor de 4.5mm parece "
-"ofrecer buenos resultados."
+"Cantidad de retracción, fijar a 0 para no retraer. Un valor de 0.1 mm es recomendable."
 
 #: Cura/util/profile.py:195
 msgid "Dual extrusion switch amount (mm)"
@@ -1668,7 +1665,8 @@ msgid ""
 msgstr ""
 "Combing es el acto de evitar los agujeros en la impresión. Si combing se "
 "desactiva el cabezal de impresión se desplaza directamente desde el punto de "
-"inicio hasta el punto final y siempre se retrae."
+"inicio hasta el punto final y siempre se retrae. Si esta activado, el cabezal "
+"se va a mover siguiendo los perimetros de las piezas."
 
 #: Cura/util/profile.py:198
 msgid "Minimal extrusion before retracting (mm)"
