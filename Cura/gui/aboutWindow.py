@@ -18,7 +18,7 @@ class aboutWindow(wx.Frame):
 		s = wx.BoxSizer(wx.VERTICAL)
 		p.SetSizer(s)
 		
-		title = wx.StaticText(p, -1, 'Cura Element v0.2')
+		title = wx.StaticText(p, -1, 'Cura Element v0.3')
 		title.SetFont(wx.Font(18, wx.SWISS, wx.NORMAL, wx.BOLD))
 		s.Add(title, flag=wx.ALIGN_CENTRE|wx.EXPAND|wx.BOTTOM, border=5)
 
