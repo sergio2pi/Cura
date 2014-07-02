@@ -81,28 +81,28 @@ class machineSettingsDialog(wx.Dialog):
 
 		for idx in xrange(0, profile.getMachineCount()):
 			left, right, main = self.panel.CreateConfigPanel(self.nb)
-			configBase.TitleRow(left, _("Machine settings"))
-			configBase.SettingRow(left, 'steps_per_e', index=idx)
-			configBase.SettingRow(left, 'machine_width', index=idx)
-			configBase.SettingRow(left, 'machine_depth', index=idx)
-			configBase.SettingRow(left, 'machine_height', index=idx)
-			configBase.SettingRow(left, 'extruder_amount', index=idx)
-			configBase.SettingRow(left, 'has_heated_bed', index=idx)
-			configBase.SettingRow(left, 'machine_center_is_zero', index=idx)
-			configBase.SettingRow(left, 'machine_shape', index=idx)
-			configBase.SettingRow(left, 'gcode_flavor', index=idx)
-
-			configBase.TitleRow(right, _("Printer head size"))
-			configBase.SettingRow(right, 'extruder_head_size_min_x', index=idx)
-			configBase.SettingRow(right, 'extruder_head_size_min_y', index=idx)
-			configBase.SettingRow(right, 'extruder_head_size_max_x', index=idx)
-			configBase.SettingRow(right, 'extruder_head_size_max_y', index=idx)
-			configBase.SettingRow(right, 'extruder_head_size_height', index=idx)
-
-			for i in xrange(1, extruderCount):
-				configBase.TitleRow(left, _("Extruder %d") % (i+1))
-				configBase.SettingRow(left, 'extruder_offset_x%d' % (i), index=idx)
-				configBase.SettingRow(left, 'extruder_offset_y%d' % (i), index=idx)
+# 			configBase.TitleRow(left, _("Machine settings"))
+# 			configBase.SettingRow(left, 'steps_per_e', index=idx)
+# 			configBase.SettingRow(left, 'machine_width', index=idx)
+# 			configBase.SettingRow(left, 'machine_depth', index=idx)
+# 			configBase.SettingRow(left, 'machine_height', index=idx)
+# 			configBase.SettingRow(left, 'extruder_amount', index=idx)
+# 			configBase.SettingRow(left, 'has_heated_bed', index=idx)
+# 			configBase.SettingRow(left, 'machine_center_is_zero', index=idx)
+# 			configBase.SettingRow(left, 'machine_shape', index=idx)
+# 			configBase.SettingRow(left, 'gcode_flavor', index=idx)
+# 
+# 			configBase.TitleRow(right, _("Printer head size"))
+# 			configBase.SettingRow(right, 'extruder_head_size_min_x', index=idx)
+# 			configBase.SettingRow(right, 'extruder_head_size_min_y', index=idx)
+# 			configBase.SettingRow(right, 'extruder_head_size_max_x', index=idx)
+# 			configBase.SettingRow(right, 'extruder_head_size_max_y', index=idx)
+# 			configBase.SettingRow(right, 'extruder_head_size_height', index=idx)
+# 
+# 			for i in xrange(1, extruderCount):
+# 				configBase.TitleRow(left, _("Extruder %d") % (i+1))
+# 				configBase.SettingRow(left, 'extruder_offset_x%d' % (i), index=idx)
+# 				configBase.SettingRow(left, 'extruder_offset_y%d' % (i), index=idx)
 
 			configBase.TitleRow(right, _("Communication settings"))
 			configBase.SettingRow(right, 'serial_port', ['AUTO'] + machineCom.serialList(), index=idx)
@@ -120,13 +120,13 @@ class machineSettingsDialog(wx.Dialog):
 		self.okButton.Bind(wx.EVT_BUTTON, lambda e: self.Close())
 		self.buttonPanel.GetSizer().Add(self.okButton, flag=wx.ALL, border=5)
 
-		self.addButton = wx.Button(self.buttonPanel, -1, 'Add new machine')
-		self.addButton.Bind(wx.EVT_BUTTON, self.OnAddMachine)
-		self.buttonPanel.GetSizer().Add(self.addButton, flag=wx.ALL, border=5)
+####		self.addButton = wx.Button(self.buttonPanel, -1, 'Add new machine')
+####		self.addButton.Bind(wx.EVT_BUTTON, self.OnAddMachine)
+####		self.buttonPanel.GetSizer().Add(self.addButton, flag=wx.ALL, border=5)
 
-		self.remButton = wx.Button(self.buttonPanel, -1, 'Remove machine')
-		self.remButton.Bind(wx.EVT_BUTTON, self.OnRemoveMachine)
-		self.buttonPanel.GetSizer().Add(self.remButton, flag=wx.ALL, border=5)
+####		self.remButton = wx.Button(self.buttonPanel, -1, 'Remove machine')
+####		self.remButton.Bind(wx.EVT_BUTTON, self.OnRemoveMachine)
+####		self.buttonPanel.GetSizer().Add(self.remButton, flag=wx.ALL, border=5)
 
 		main.Fit()
 		self.Fit()

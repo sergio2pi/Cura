@@ -99,8 +99,8 @@ class mainWindow(wx.Frame):
 		self.fileMenu.AppendSeparator()
 		i = self.fileMenu.Append(-1, _("Preferences...\tCTRL+,"))
 		self.Bind(wx.EVT_MENU, self.OnPreferences, i)
-####		i = self.fileMenu.Append(-1, _("Machine settings..."))
-####		self.Bind(wx.EVT_MENU, self.OnMachineSettings, i)
+		i = self.fileMenu.Append(-1, _("Machine settings..."))
+		self.Bind(wx.EVT_MENU, self.OnMachineSettings, i)
 		self.fileMenu.AppendSeparator()
 
 		# Model MRU list
@@ -151,10 +151,10 @@ class mainWindow(wx.Frame):
 		#self.menubar.Append(toolsMenu, _("Tools"))
 
 		#Machine menu for machine configuration/tooling
-# 		self.machineMenu = wx.Menu()
-# 		self.updateMachineMenu()
-# 
-# 		self.menubar.Append(self.machineMenu, _("Machine"))
+#### 		self.machineMenu = wx.Menu()
+#### 		self.updateMachineMenu()
+#### 
+#### 		self.menubar.Append(self.machineMenu, _("Machine"))
 
 		expertMenu = wx.Menu()
 		i = expertMenu.Append(-1, _("Switch to quickprint..."), kind=wx.ITEM_RADIO)
